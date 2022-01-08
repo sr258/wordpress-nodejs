@@ -1,0 +1,25 @@
+{
+  "name": "wordpress-nodejs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -P ./tsconfig.json",
+    "clean": "rm -rf build && rm -rf node_modules",
+    "start:watch": "ts-node-dev --deps --respawn src/index.ts",
+    "start": "ts-node -P ./tsconfig.json src/index.ts"
+  },
+  "author": "S. Rettig",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4",
+    "wp-auth": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
