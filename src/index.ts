@@ -53,7 +53,7 @@ const start = async () => {
           }
           next();
         } else {
-          next();
+          res.redirect(`http://localhost:7000/wp-login.php?redirect_to=http://localhost:${port}`)
         }
       });
   });
