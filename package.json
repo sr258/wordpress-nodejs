@@ -12,6 +12,8 @@
   "author": "S. Rettig",
   "license": "MIT",
   "dependencies": {
+    "debug": "^4.3.3",
+    "dotenv": "^14.2.0",
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
     "ts-node": "^10.4.0",
@@ -20,6 +22,7 @@
     "wp-auth": "^1.0.6"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.7",
     "@types/express": "^4.17.13"
   }
 }
